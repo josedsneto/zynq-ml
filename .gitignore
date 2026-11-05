@@ -1,0 +1,41 @@
+# Build Artifacts
+*.o
+*.elf
+*.bin
+*.hex
+*.dump
+comparison_results.png
+
+# Generated Datasets
+data/*.txt
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Vivado generated directories and logs
+.Xil/
+*.jou
+*.log
+*.str
+*.backup.jou
+*.backup.log
+*.wdb
+*.pb
+*.dcp
+*.rpt
+*.rpx
+*.vds
+*.vdi
+zynq_ml.sim/sim_1/behav/xsim/
+zynq_ml.hw/
+zynq_ml.runs/
+zynq_ml.cache/
+zynq_ml.ip_user_files/
+
+# Vitis generated files
+vitis_workspace/.metadata/
+vitis_workspace/*/.wsdata/
+vitis_workspace/*/build/
+vitis_workspace/*/export/

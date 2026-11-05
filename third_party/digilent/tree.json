@@ -1,0 +1,1898 @@
+{
+  "sha": "d8d43ed9f3f7e367ee3de82782ed601d88305677",
+  "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/d8d43ed9f3f7e367ee3de82782ed601d88305677",
+  "tree": [
+    {
+      "path": "License.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b76cf0cb2176de7a39b3e22d0782b4d712e83cca",
+      "size": 1070,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/b76cf0cb2176de7a39b3e22d0782b4d712e83cca"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a69f98b3e7e23cc326082be11750a2efcc20696f",
+      "size": 1498,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/a69f98b3e7e23cc326082be11750a2efcc20696f"
+    },
+    {
+      "path": "SECURITY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37f9a03833182db83a4e47fe54ec727b4a157569",
+      "size": 1260,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/37f9a03833182db83a4e47fe54ec727b4a157569"
+    },
+    {
+      "path": "new",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f76ebe2fd9ecc9da428b0dcc53a20dd8caf68ea0",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/f76ebe2fd9ecc9da428b0dcc53a20dd8caf68ea0"
+    },
+    {
+      "path": "new/board_files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9c9e3e2a4305768122e58d942c7dd3ae68eb5aff",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/9c9e3e2a4305768122e58d942c7dd3ae68eb5aff"
+    },
+    {
+      "path": "new/board_files/arty-a7-100",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7375858cc2f5c9ef0964e1cd4e56a3bf2b7b764a",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/7375858cc2f5c9ef0964e1cd4e56a3bf2b7b764a"
+    },
+    {
+      "path": "new/board_files/arty-a7-100/E.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b4c75f958ee5ae911db5f0634d6bfea2d5421d77",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/b4c75f958ee5ae911db5f0634d6bfea2d5421d77"
+    },
+    {
+      "path": "new/board_files/arty-a7-100/E.0/1.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4c559ca3c914559678b56ed615813c7ff67c0b88",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/4c559ca3c914559678b56ed615813c7ff67c0b88"
+    },
+    {
+      "path": "new/board_files/arty-a7-100/E.0/1.0/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50f45357b963559ed2f2ca338ce6f0fcec3f6608",
+      "size": 58916,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/50f45357b963559ed2f2ca338ce6f0fcec3f6608"
+    },
+    {
+      "path": "new/board_files/arty-a7-100/E.0/1.0/mig.prj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bff709e80b01dc72eb30db64dd2fb92f9759d26",
+      "size": 9699,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/1bff709e80b01dc72eb30db64dd2fb92f9759d26"
+    },
+    {
+      "path": "new/board_files/arty-a7-100/E.0/1.0/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc32e54efd754ba1df183231cb20ae6341ff9c47",
+      "size": 10772,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/dc32e54efd754ba1df183231cb20ae6341ff9c47"
+    },
+    {
+      "path": "new/board_files/arty-a7-100/E.0/1.0/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec20fb479f9c5e040c7b78e4fd960cf10242968c",
+      "size": 18778,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/ec20fb479f9c5e040c7b78e4fd960cf10242968c"
+    },
+    {
+      "path": "new/board_files/arty-a7-100/E.0/1.1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2afc42c6316396cce1539c78da7d0aef11e8b48d",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/2afc42c6316396cce1539c78da7d0aef11e8b48d"
+    },
+    {
+      "path": "new/board_files/arty-a7-100/E.0/1.1/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bffd15b522cc12dee32802d830365b8c9eb1346",
+      "size": 58890,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/1bffd15b522cc12dee32802d830365b8c9eb1346"
+    },
+    {
+      "path": "new/board_files/arty-a7-100/E.0/1.1/mig.prj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d50acb57f6ec30ac7c954485b47a775dd294c587",
+      "size": 9202,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/d50acb57f6ec30ac7c954485b47a775dd294c587"
+    },
+    {
+      "path": "new/board_files/arty-a7-100/E.0/1.1/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc32e54efd754ba1df183231cb20ae6341ff9c47",
+      "size": 10772,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/dc32e54efd754ba1df183231cb20ae6341ff9c47"
+    },
+    {
+      "path": "new/board_files/arty-a7-100/E.0/1.1/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec20fb479f9c5e040c7b78e4fd960cf10242968c",
+      "size": 18778,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/ec20fb479f9c5e040c7b78e4fd960cf10242968c"
+    },
+    {
+      "path": "new/board_files/arty-a7-35",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b20203b22845045f92b335d133f630ff1409430f",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/b20203b22845045f92b335d133f630ff1409430f"
+    },
+    {
+      "path": "new/board_files/arty-a7-35/E.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3ef1f7eb4a2e313b1b2d13dae4a2de416a725380",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/3ef1f7eb4a2e313b1b2d13dae4a2de416a725380"
+    },
+    {
+      "path": "new/board_files/arty-a7-35/E.0/1.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2292cb2416be14fac0b27a51a8ee1aa7f51c35f5",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/2292cb2416be14fac0b27a51a8ee1aa7f51c35f5"
+    },
+    {
+      "path": "new/board_files/arty-a7-35/E.0/1.0/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4074b8497b82b22c376b9fa58e7c63390408c14a",
+      "size": 58932,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/4074b8497b82b22c376b9fa58e7c63390408c14a"
+    },
+    {
+      "path": "new/board_files/arty-a7-35/E.0/1.0/mig.prj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b31d7bc88fb08976d2f9c7e77706af48ac6177e",
+      "size": 9700,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/9b31d7bc88fb08976d2f9c7e77706af48ac6177e"
+    },
+    {
+      "path": "new/board_files/arty-a7-35/E.0/1.0/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f6de551304064f26f61f9a8b61b928f3ac61949",
+      "size": 10771,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/3f6de551304064f26f61f9a8b61b928f3ac61949"
+    },
+    {
+      "path": "new/board_files/arty-a7-35/E.0/1.0/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f0b6c32972a5f346dc97aa4da94bd5028f4d8bb",
+      "size": 18778,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/8f0b6c32972a5f346dc97aa4da94bd5028f4d8bb"
+    },
+    {
+      "path": "new/board_files/arty-a7-35/E.0/1.1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f88e34779586143f28dd22e599af7657f396541a",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/f88e34779586143f28dd22e599af7657f396541a"
+    },
+    {
+      "path": "new/board_files/arty-a7-35/E.0/1.1/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0ebb7386933dbd9cff7a2b30283e367595baea8",
+      "size": 58906,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/f0ebb7386933dbd9cff7a2b30283e367595baea8"
+    },
+    {
+      "path": "new/board_files/arty-a7-35/E.0/1.1/mig.prj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68cea8cfb61f15d233f0a2bb415279ed13f1fa17",
+      "size": 9203,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/68cea8cfb61f15d233f0a2bb415279ed13f1fa17"
+    },
+    {
+      "path": "new/board_files/arty-a7-35/E.0/1.1/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f6de551304064f26f61f9a8b61b928f3ac61949",
+      "size": 10771,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/3f6de551304064f26f61f9a8b61b928f3ac61949"
+    },
+    {
+      "path": "new/board_files/arty-a7-35/E.0/1.1/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f0b6c32972a5f346dc97aa4da94bd5028f4d8bb",
+      "size": 18778,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/8f0b6c32972a5f346dc97aa4da94bd5028f4d8bb"
+    },
+    {
+      "path": "new/board_files/arty-s7-25",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3645a6322794b28ed4b38403e7021d3237f29537",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/3645a6322794b28ed4b38403e7021d3237f29537"
+    },
+    {
+      "path": "new/board_files/arty-s7-25/E.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6389275fbe2055930bd8521bea827656e370dc76",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/6389275fbe2055930bd8521bea827656e370dc76"
+    },
+    {
+      "path": "new/board_files/arty-s7-25/E.0/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af685e355375ea38d8685d2921ef6157a1512427",
+      "size": 49610,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/af685e355375ea38d8685d2921ef6157a1512427"
+    },
+    {
+      "path": "new/board_files/arty-s7-25/E.0/mig.prj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3ebc5afbc4ba7d54063797a34d6ad8694bd0aab",
+      "size": 9858,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/d3ebc5afbc4ba7d54063797a34d6ad8694bd0aab"
+    },
+    {
+      "path": "new/board_files/arty-s7-25/E.0/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba2a2568aa339779a0727c185b641c8e810bc6ec",
+      "size": 7341,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/ba2a2568aa339779a0727c185b641c8e810bc6ec"
+    },
+    {
+      "path": "new/board_files/arty-s7-25/E.0/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be425edb78c76a51d9a3508cf0836a75fdcc79b7",
+      "size": 19211,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/be425edb78c76a51d9a3508cf0836a75fdcc79b7"
+    },
+    {
+      "path": "new/board_files/arty-s7-50",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4ccd16a17b3d8e4776382a3a570e4f0c8051d285",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/4ccd16a17b3d8e4776382a3a570e4f0c8051d285"
+    },
+    {
+      "path": "new/board_files/arty-s7-50/B.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "87d9a53dcff7791fd8abcb14c15502b6c0ea91a9",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/87d9a53dcff7791fd8abcb14c15502b6c0ea91a9"
+    },
+    {
+      "path": "new/board_files/arty-s7-50/B.0/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "feeac7345325577a8de22cc45a65127126f90075",
+      "size": 49614,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/feeac7345325577a8de22cc45a65127126f90075"
+    },
+    {
+      "path": "new/board_files/arty-s7-50/B.0/mig.prj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0889422d47040df59685000de2ae00e1ee45683",
+      "size": 9857,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/b0889422d47040df59685000de2ae00e1ee45683"
+    },
+    {
+      "path": "new/board_files/arty-s7-50/B.0/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8019600c44fe6ea7f5367c9195d1d6a81fca916",
+      "size": 7341,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/e8019600c44fe6ea7f5367c9195d1d6a81fca916"
+    },
+    {
+      "path": "new/board_files/arty-s7-50/B.0/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be425edb78c76a51d9a3508cf0836a75fdcc79b7",
+      "size": 19211,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/be425edb78c76a51d9a3508cf0836a75fdcc79b7"
+    },
+    {
+      "path": "new/board_files/arty-z7-10",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "acf2012e84875797aa42bee621c7151d4617c882",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/acf2012e84875797aa42bee621c7151d4617c882"
+    },
+    {
+      "path": "new/board_files/arty-z7-10/A.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1f2dc5992eb5b8ff41b2dbbe723364dc1bd28c10",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/1f2dc5992eb5b8ff41b2dbbe723364dc1bd28c10"
+    },
+    {
+      "path": "new/board_files/arty-z7-10/A.0/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae4d777d967dfa302fe4a078337b405cad41eeac",
+      "size": 27350,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/ae4d777d967dfa302fe4a078337b405cad41eeac"
+    },
+    {
+      "path": "new/board_files/arty-z7-10/A.0/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98bb7418cb988c4a370ca3a73c33d7a64f71455a",
+      "size": 5134,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/98bb7418cb988c4a370ca3a73c33d7a64f71455a"
+    },
+    {
+      "path": "new/board_files/arty-z7-10/A.0/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6408405cc3de1907f9cf705f207f09d14d7cc25c",
+      "size": 75342,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/6408405cc3de1907f9cf705f207f09d14d7cc25c"
+    },
+    {
+      "path": "new/board_files/arty-z7-20",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "053d09643249a02073ba504277c0f4c5211d09bc",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/053d09643249a02073ba504277c0f4c5211d09bc"
+    },
+    {
+      "path": "new/board_files/arty-z7-20/A.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "34016ef607f053b962977db853948b03ac04f060",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/34016ef607f053b962977db853948b03ac04f060"
+    },
+    {
+      "path": "new/board_files/arty-z7-20/A.0/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66e26d592b1463e73d1d1e4461de01ec6e72d57e",
+      "size": 32642,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/66e26d592b1463e73d1d1e4461de01ec6e72d57e"
+    },
+    {
+      "path": "new/board_files/arty-z7-20/A.0/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f58f63070df07fc1ff13518b7f505c70e03756c",
+      "size": 6486,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/1f58f63070df07fc1ff13518b7f505c70e03756c"
+    },
+    {
+      "path": "new/board_files/arty-z7-20/A.0/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99e012e156292a7f8bfe4d11cfeb170923f9b2e7",
+      "size": 76038,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/99e012e156292a7f8bfe4d11cfeb170923f9b2e7"
+    },
+    {
+      "path": "new/board_files/arty",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9ee1065a5f59d500eff6b75d2b5f05fc7b122467",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/9ee1065a5f59d500eff6b75d2b5f05fc7b122467"
+    },
+    {
+      "path": "new/board_files/arty/C.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "51238d7f03be93c977b941d322a24b66ed354220",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/51238d7f03be93c977b941d322a24b66ed354220"
+    },
+    {
+      "path": "new/board_files/arty/C.0/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8fedc5f503942b9894b3a8423e42c4e4ca576d07",
+      "size": 59487,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/8fedc5f503942b9894b3a8423e42c4e4ca576d07"
+    },
+    {
+      "path": "new/board_files/arty/C.0/mig.prj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b31d7bc88fb08976d2f9c7e77706af48ac6177e",
+      "size": 9700,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/9b31d7bc88fb08976d2f9c7e77706af48ac6177e"
+    },
+    {
+      "path": "new/board_files/arty/C.0/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f6de551304064f26f61f9a8b61b928f3ac61949",
+      "size": 10771,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/3f6de551304064f26f61f9a8b61b928f3ac61949"
+    },
+    {
+      "path": "new/board_files/arty/C.0/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c53ad754e80bf6110ca50b8e8f45454a821624d9",
+      "size": 18536,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/c53ad754e80bf6110ca50b8e8f45454a821624d9"
+    },
+    {
+      "path": "new/board_files/basys3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ebdf7678935762012b7427057b3036e3dcf370ed",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/ebdf7678935762012b7427057b3036e3dcf370ed"
+    },
+    {
+      "path": "new/board_files/basys3/C.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d08a3b1ce72a07d67200ef81b0b9a285d584c4cf",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/d08a3b1ce72a07d67200ef81b0b9a285d584c4cf"
+    },
+    {
+      "path": "new/board_files/basys3/C.0/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f37c4b9ba38c438d4ee23e135dfa76c79162111d",
+      "size": 36530,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/f37c4b9ba38c438d4ee23e135dfa76c79162111d"
+    },
+    {
+      "path": "new/board_files/basys3/C.0/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbf7cb0842cafb852fbc091b9642e4dd7c310358",
+      "size": 7953,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/bbf7cb0842cafb852fbc091b9642e4dd7c310358"
+    },
+    {
+      "path": "new/board_files/basys3/C.0/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e2b014753c5036f450ad74b2370e0058e863012",
+      "size": 15450,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/5e2b014753c5036f450ad74b2370e0058e863012"
+    },
+    {
+      "path": "new/board_files/cmod-s7-25",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "be7cb4eef96021773716f5f4ed8bb44db1225b83",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/be7cb4eef96021773716f5f4ed8bb44db1225b83"
+    },
+    {
+      "path": "new/board_files/cmod-s7-25/B.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1ba74a3016d9ec0a3637adfb787bdf31a4901c79",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/1ba74a3016d9ec0a3637adfb787bdf31a4901c79"
+    },
+    {
+      "path": "new/board_files/cmod-s7-25/B.0/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "369bdc75ec4e09fb8e8dcee381fd928b066a2b48",
+      "size": 24976,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/369bdc75ec4e09fb8e8dcee381fd928b066a2b48"
+    },
+    {
+      "path": "new/board_files/cmod-s7-25/B.0/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "168ea6f60d14070a6db3fe15ecb2ef0fb4e81d97",
+      "size": 4436,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/168ea6f60d14070a6db3fe15ecb2ef0fb4e81d97"
+    },
+    {
+      "path": "new/board_files/cmod-s7-25/B.0/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0b6b52876f5776c2540699a2809302527f3cef7",
+      "size": 16307,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/a0b6b52876f5776c2540699a2809302527f3cef7"
+    },
+    {
+      "path": "new/board_files/cmod_a7-15t",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9cb48fc7591040a8a94ec291c9f485066486b35e",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/9cb48fc7591040a8a94ec291c9f485066486b35e"
+    },
+    {
+      "path": "new/board_files/cmod_a7-15t/B.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b9e819f25136648c7fe313e72bd74b2bccbc9be7",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/b9e819f25136648c7fe313e72bd74b2bccbc9be7"
+    },
+    {
+      "path": "new/board_files/cmod_a7-15t/B.0/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4243293282f817c854e6eaa4ccbfcfc66b1b5c3d",
+      "size": 22890,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/4243293282f817c854e6eaa4ccbfcfc66b1b5c3d"
+    },
+    {
+      "path": "new/board_files/cmod_a7-15t/B.0/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c19b85feaf462602b2c8330a4f54d5f09265cee",
+      "size": 5212,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/4c19b85feaf462602b2c8330a4f54d5f09265cee"
+    },
+    {
+      "path": "new/board_files/cmod_a7-15t/B.0/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c6346032dde2f84956cd50248c99cba5c1d9e2e",
+      "size": 13529,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/6c6346032dde2f84956cd50248c99cba5c1d9e2e"
+    },
+    {
+      "path": "new/board_files/cmod_a7-35t",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ae39dbccf8a20b57f3112b5e804cf995f75ed339",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/ae39dbccf8a20b57f3112b5e804cf995f75ed339"
+    },
+    {
+      "path": "new/board_files/cmod_a7-35t/B.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f1f3b78759f6fed6e9861674da2b26e9d27ed5c0",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/f1f3b78759f6fed6e9861674da2b26e9d27ed5c0"
+    },
+    {
+      "path": "new/board_files/cmod_a7-35t/B.0/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "942f1b7f387bb3a774677bfa14af520aa297bcc5",
+      "size": 22890,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/942f1b7f387bb3a774677bfa14af520aa297bcc5"
+    },
+    {
+      "path": "new/board_files/cmod_a7-35t/B.0/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee7bbe0da4d6f544e27694023a23c39bd823ae1e",
+      "size": 5212,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/ee7bbe0da4d6f544e27694023a23c39bd823ae1e"
+    },
+    {
+      "path": "new/board_files/cmod_a7-35t/B.0/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "947361cf87f9eb4af8168b0be04a3f926ec0e1f5",
+      "size": 13533,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/947361cf87f9eb4af8168b0be04a3f926ec0e1f5"
+    },
+    {
+      "path": "new/board_files/cora-z7-07s",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "95b137e9a87c8fd8c6b540d0ef80cad69c189049",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/95b137e9a87c8fd8c6b540d0ef80cad69c189049"
+    },
+    {
+      "path": "new/board_files/cora-z7-07s/B.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e47a80635c5005b5322411f29442ddf7f44358b6",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/e47a80635c5005b5322411f29442ddf7f44358b6"
+    },
+    {
+      "path": "new/board_files/cora-z7-07s/B.0/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb7a551e4616fd48c177ec120c5fbe1cd7696c71",
+      "size": 33354,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/cb7a551e4616fd48c177ec120c5fbe1cd7696c71"
+    },
+    {
+      "path": "new/board_files/cora-z7-07s/B.0/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d8d5fd69d302afb62bb46f9fcc2157b9b0362f3",
+      "size": 9731,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/2d8d5fd69d302afb62bb46f9fcc2157b9b0362f3"
+    },
+    {
+      "path": "new/board_files/cora-z7-07s/B.0/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9599c5329b930abcf8255fc7670387016461b768",
+      "size": 37906,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/9599c5329b930abcf8255fc7670387016461b768"
+    },
+    {
+      "path": "new/board_files/cora-z7-10",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4572b4377fa1ba2794ce4ee547d2f6c7db3f54ea",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/4572b4377fa1ba2794ce4ee547d2f6c7db3f54ea"
+    },
+    {
+      "path": "new/board_files/cora-z7-10/B.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e13d320874d6de87b84e866f23a462288ae2c183",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/e13d320874d6de87b84e866f23a462288ae2c183"
+    },
+    {
+      "path": "new/board_files/cora-z7-10/B.0/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53d6c9c8e569291cd1eb2896e4ad233efaabc3e3",
+      "size": 33349,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/53d6c9c8e569291cd1eb2896e4ad233efaabc3e3"
+    },
+    {
+      "path": "new/board_files/cora-z7-10/B.0/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a548d8b0941550137918c12a000f180ff9b1919",
+      "size": 9730,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/3a548d8b0941550137918c12a000f180ff9b1919"
+    },
+    {
+      "path": "new/board_files/cora-z7-10/B.0/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d90c60d2095625402da8c7f6f0c075396f410342",
+      "size": 37904,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/d90c60d2095625402da8c7f6f0c075396f410342"
+    },
+    {
+      "path": "new/board_files/eclypse-z7",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5dcfde17ef1d6052f738c3335fae76e774003e5a",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/5dcfde17ef1d6052f738c3335fae76e774003e5a"
+    },
+    {
+      "path": "new/board_files/eclypse-z7/A.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee55a217e5b539b12b72e1ee5f04ad33dbed3721",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/ee55a217e5b539b12b72e1ee5f04ad33dbed3721"
+    },
+    {
+      "path": "new/board_files/eclypse-z7/A.0/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5148031595ddac7a721153c69ece9999bf9c5e4",
+      "size": 15112,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/f5148031595ddac7a721153c69ece9999bf9c5e4"
+    },
+    {
+      "path": "new/board_files/eclypse-z7/A.0/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2155f3e15e2827bc1b823386be71433098af6bf",
+      "size": 3837,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/b2155f3e15e2827bc1b823386be71433098af6bf"
+    },
+    {
+      "path": "new/board_files/eclypse-z7/A.0/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "352e45918d8fb7bb62fd337c0563f5ca5680cdd0",
+      "size": 44444,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/352e45918d8fb7bb62fd337c0563f5ca5680cdd0"
+    },
+    {
+      "path": "new/board_files/eclypse-z7/B.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2b20b6a583f5686f4b7efee4d4a7bccb2637221c",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/2b20b6a583f5686f4b7efee4d4a7bccb2637221c"
+    },
+    {
+      "path": "new/board_files/eclypse-z7/B.0/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20768cd01a950a7dc11db60d9dd6b4e796d2a563",
+      "size": 15198,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/20768cd01a950a7dc11db60d9dd6b4e796d2a563"
+    },
+    {
+      "path": "new/board_files/eclypse-z7/B.0/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71a442f5de9f641430f47124c9d0ce467efb79f2",
+      "size": 3837,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/71a442f5de9f641430f47124c9d0ce467efb79f2"
+    },
+    {
+      "path": "new/board_files/eclypse-z7/B.0/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c32c99d5b805d546f303dbc808526dafc1d03cfa",
+      "size": 44444,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/c32c99d5b805d546f303dbc808526dafc1d03cfa"
+    },
+    {
+      "path": "new/board_files/genesys-zu-3eg",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0dbb76f23d7a5df6afc20c95ad4a68074535a938",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/0dbb76f23d7a5df6afc20c95ad4a68074535a938"
+    },
+    {
+      "path": "new/board_files/genesys-zu-3eg/B.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0fc7bc9eaed43f73d773984721db8ced5ba90e21",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/0fc7bc9eaed43f73d773984721db8ced5ba90e21"
+    },
+    {
+      "path": "new/board_files/genesys-zu-3eg/B.0/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94f9e823ffc8dd2b5f60a5cb8fa97abb5daf097c",
+      "size": 21532,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/94f9e823ffc8dd2b5f60a5cb8fa97abb5daf097c"
+    },
+    {
+      "path": "new/board_files/genesys-zu-3eg/B.0/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6c135cf5d71621663fdb0ee747350449a776a51",
+      "size": 4795,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/e6c135cf5d71621663fdb0ee747350449a776a51"
+    },
+    {
+      "path": "new/board_files/genesys-zu-3eg/B.0/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0277e7fe92622cfeff61eee7749b93eee7387b0a",
+      "size": 71721,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/0277e7fe92622cfeff61eee7749b93eee7387b0a"
+    },
+    {
+      "path": "new/board_files/genesys-zu-3eg/D.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "183ef7a3829739439a3a69f40c19ff57b41dc7c4",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/183ef7a3829739439a3a69f40c19ff57b41dc7c4"
+    },
+    {
+      "path": "new/board_files/genesys-zu-3eg/D.0/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a369eb7d20a7bf14a2113016ac05738830e2f048",
+      "size": 21532,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/a369eb7d20a7bf14a2113016ac05738830e2f048"
+    },
+    {
+      "path": "new/board_files/genesys-zu-3eg/D.0/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9573ec0bd74129ea15fca1429394a6003131d8b",
+      "size": 4795,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/d9573ec0bd74129ea15fca1429394a6003131d8b"
+    },
+    {
+      "path": "new/board_files/genesys-zu-3eg/D.0/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74e3cb16c6b608c94451f591406fca76bd0ff20d",
+      "size": 71721,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/74e3cb16c6b608c94451f591406fca76bd0ff20d"
+    },
+    {
+      "path": "new/board_files/genesys-zu-5ev",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5ffaaaed3589d4c69df01f7652fdc651dbdade48",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/5ffaaaed3589d4c69df01f7652fdc651dbdade48"
+    },
+    {
+      "path": "new/board_files/genesys-zu-5ev/C.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2426fb69a817c7283ce08e37edb4a50887b8c6cc",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/2426fb69a817c7283ce08e37edb4a50887b8c6cc"
+    },
+    {
+      "path": "new/board_files/genesys-zu-5ev/C.0/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67547b99b63e8edad5b18f7b3ea37e98e130bc7a",
+      "size": 21533,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/67547b99b63e8edad5b18f7b3ea37e98e130bc7a"
+    },
+    {
+      "path": "new/board_files/genesys-zu-5ev/C.0/changelog.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfd51fb234cd5ce296336c7908b1103f5d4f8a61",
+      "size": 199,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/dfd51fb234cd5ce296336c7908b1103f5d4f8a61"
+    },
+    {
+      "path": "new/board_files/genesys-zu-5ev/C.0/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e219652b5cc74c2e939155038d44ebc2f86d9842",
+      "size": 4795,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/e219652b5cc74c2e939155038d44ebc2f86d9842"
+    },
+    {
+      "path": "new/board_files/genesys-zu-5ev/C.0/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b68a759bf1ca676a909e5f01389285fff601e69",
+      "size": 86381,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/6b68a759bf1ca676a909e5f01389285fff601e69"
+    },
+    {
+      "path": "new/board_files/genesys2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a850031cc40789fe6056b4a999f5191c3c25c174",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/a850031cc40789fe6056b4a999f5191c3c25c174"
+    },
+    {
+      "path": "new/board_files/genesys2/H",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2df7c41664379e616f3670b8ebfb4eba5efbcc1e",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/2df7c41664379e616f3670b8ebfb4eba5efbcc1e"
+    },
+    {
+      "path": "new/board_files/genesys2/H/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3def77342644fc575fbc1c75b60a9e0c62890795",
+      "size": 68526,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/3def77342644fc575fbc1c75b60a9e0c62890795"
+    },
+    {
+      "path": "new/board_files/genesys2/H/mig.prj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11adaf423904bc93ca8f2afd050fb935cf3698e4",
+      "size": 12188,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/11adaf423904bc93ca8f2afd050fb935cf3698e4"
+    },
+    {
+      "path": "new/board_files/genesys2/H/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d35b32bceefbfa1f141fea486c14ed821d095ae3",
+      "size": 11023,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/d35b32bceefbfa1f141fea486c14ed821d095ae3"
+    },
+    {
+      "path": "new/board_files/genesys2/H/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ab1d3e28e5fc540cad55f0e7d6d8001ef6650c4",
+      "size": 14807,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/2ab1d3e28e5fc540cad55f0e7d6d8001ef6650c4"
+    },
+    {
+      "path": "new/board_files/nexys-a7-100t",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f764d96e2dae549e52b2dbb10c721af5d1dc9ab2",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/f764d96e2dae549e52b2dbb10c721af5d1dc9ab2"
+    },
+    {
+      "path": "new/board_files/nexys-a7-100t/D.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cd33c765ff3bf5268fc3ffe7e4316bb781693813",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/cd33c765ff3bf5268fc3ffe7e4316bb781693813"
+    },
+    {
+      "path": "new/board_files/nexys-a7-100t/D.0/1.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3cf7e1e3a8c2a6f7b99e3711e6876a4f5df64f97",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/3cf7e1e3a8c2a6f7b99e3711e6876a4f5df64f97"
+    },
+    {
+      "path": "new/board_files/nexys-a7-100t/D.0/1.0/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74e1500df2013ada411b256b221bb4809c4e3de9",
+      "size": 60016,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/74e1500df2013ada411b256b221bb4809c4e3de9"
+    },
+    {
+      "path": "new/board_files/nexys-a7-100t/D.0/1.0/mig.prj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c132cb507750317d699df999affd44f0f8225ca",
+      "size": 9213,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/3c132cb507750317d699df999affd44f0f8225ca"
+    },
+    {
+      "path": "new/board_files/nexys-a7-100t/D.0/1.0/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55f9b06870043bae946ad93c6ad15b31bca7ebb2",
+      "size": 11152,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/55f9b06870043bae946ad93c6ad15b31bca7ebb2"
+    },
+    {
+      "path": "new/board_files/nexys-a7-100t/D.0/1.0/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7128ccee0b994efd117859ea3680ddab31d07ba1",
+      "size": 17820,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/7128ccee0b994efd117859ea3680ddab31d07ba1"
+    },
+    {
+      "path": "new/board_files/nexys-a7-100t/D.0/1.3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2ffc451468e204ce4d63411c4c095311c9e31e5c",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/2ffc451468e204ce4d63411c4c095311c9e31e5c"
+    },
+    {
+      "path": "new/board_files/nexys-a7-100t/D.0/1.3/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4f442b0d54cf8fda72c7562ad5c501ad91c94b0",
+      "size": 56500,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/d4f442b0d54cf8fda72c7562ad5c501ad91c94b0"
+    },
+    {
+      "path": "new/board_files/nexys-a7-100t/D.0/1.3/mig.prj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "301f583462b4825c23df1e4bcff51137a6dccc06",
+      "size": 8693,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/301f583462b4825c23df1e4bcff51137a6dccc06"
+    },
+    {
+      "path": "new/board_files/nexys-a7-100t/D.0/1.3/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5ad21b52fa5c5640a7bcadf1cb3b347c0a6ae53",
+      "size": 10492,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/b5ad21b52fa5c5640a7bcadf1cb3b347c0a6ae53"
+    },
+    {
+      "path": "new/board_files/nexys-a7-100t/D.0/1.3/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a46917bf6d9cc26593c5e510b0020e22430f1c0f",
+      "size": 17820,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/a46917bf6d9cc26593c5e510b0020e22430f1c0f"
+    },
+    {
+      "path": "new/board_files/nexys-a7-50t",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "956be30293fbd3f23b0ddfd9085638ddc203341e",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/956be30293fbd3f23b0ddfd9085638ddc203341e"
+    },
+    {
+      "path": "new/board_files/nexys-a7-50t/D.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0503efaf20364bf672913252181bfc4f00258e67",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/0503efaf20364bf672913252181bfc4f00258e67"
+    },
+    {
+      "path": "new/board_files/nexys-a7-50t/D.0/1.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6ce33ac8232a3abfda18ccd63cf14c9f4bc9c0aa",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/6ce33ac8232a3abfda18ccd63cf14c9f4bc9c0aa"
+    },
+    {
+      "path": "new/board_files/nexys-a7-50t/D.0/1.0/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f02906dbb8ebd46657b5de10354652a5780b00e",
+      "size": 58933,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/8f02906dbb8ebd46657b5de10354652a5780b00e"
+    },
+    {
+      "path": "new/board_files/nexys-a7-50t/D.0/1.0/mig.prj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc8bfb71cd56ebe2b8201e3e2938da2d876303b8",
+      "size": 9132,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/fc8bfb71cd56ebe2b8201e3e2938da2d876303b8"
+    },
+    {
+      "path": "new/board_files/nexys-a7-50t/D.0/1.0/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0de1b2f5c6f366004c167f173224d5f0a0e5d7bb",
+      "size": 10073,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/0de1b2f5c6f366004c167f173224d5f0a0e5d7bb"
+    },
+    {
+      "path": "new/board_files/nexys-a7-50t/D.0/1.0/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e3b6706a2faa4d1550e93aba32512ba08851c40",
+      "size": 16740,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/4e3b6706a2faa4d1550e93aba32512ba08851c40"
+    },
+    {
+      "path": "new/board_files/nexys-a7-50t/D.0/1.3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8af4bb1ff9d47bfc3223c69bfa3ecc57ffcf3a48",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/8af4bb1ff9d47bfc3223c69bfa3ecc57ffcf3a48"
+    },
+    {
+      "path": "new/board_files/nexys-a7-50t/D.0/1.3/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12ff9bb18396d3dac043cd692208879897f8087c",
+      "size": 56738,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/12ff9bb18396d3dac043cd692208879897f8087c"
+    },
+    {
+      "path": "new/board_files/nexys-a7-50t/D.0/1.3/mig.prj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3bae87b7b7af3712b3b7d523478e9479fb7b0e64",
+      "size": 9217,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/3bae87b7b7af3712b3b7d523478e9479fb7b0e64"
+    },
+    {
+      "path": "new/board_files/nexys-a7-50t/D.0/1.3/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab348624dac4999c0bad24aea9713445672fd249",
+      "size": 10493,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/ab348624dac4999c0bad24aea9713445672fd249"
+    },
+    {
+      "path": "new/board_files/nexys-a7-50t/D.0/1.3/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a46917bf6d9cc26593c5e510b0020e22430f1c0f",
+      "size": 17820,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/a46917bf6d9cc26593c5e510b0020e22430f1c0f"
+    },
+    {
+      "path": "new/board_files/nexys4",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8fb0a66fdac160026b0736a7c2a08924b2230d00",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/8fb0a66fdac160026b0736a7c2a08924b2230d00"
+    },
+    {
+      "path": "new/board_files/nexys4/B.1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4463cf619484995862e05b0b11956f3b73f9568e",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/4463cf619484995862e05b0b11956f3b73f9568e"
+    },
+    {
+      "path": "new/board_files/nexys4/B.1/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f463814721b0defe84d6833abec0c24ece3be315",
+      "size": 67348,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/f463814721b0defe84d6833abec0c24ece3be315"
+    },
+    {
+      "path": "new/board_files/nexys4/B.1/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79ab8f11109ad2fadde8c9ac30818c358e94c824",
+      "size": 14837,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/79ab8f11109ad2fadde8c9ac30818c358e94c824"
+    },
+    {
+      "path": "new/board_files/nexys4/B.1/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97ec555c9a0642d39d024a6ce3f40e935db13eb4",
+      "size": 18289,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/97ec555c9a0642d39d024a6ce3f40e935db13eb4"
+    },
+    {
+      "path": "new/board_files/nexys4_ddr",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "12361d985be3d84a03afa6a7533d9a41c69af640",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/12361d985be3d84a03afa6a7533d9a41c69af640"
+    },
+    {
+      "path": "new/board_files/nexys4_ddr/C.1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "752b4b40687e0a2408250562e125237c492b2974",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/752b4b40687e0a2408250562e125237c492b2974"
+    },
+    {
+      "path": "new/board_files/nexys4_ddr/C.1/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1846bf3adc3696bd83d25b0ab6f65dba1f2513f9",
+      "size": 60010,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/1846bf3adc3696bd83d25b0ab6f65dba1f2513f9"
+    },
+    {
+      "path": "new/board_files/nexys4_ddr/C.1/mig.prj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "254931c3b4a525c26013bef8c19a28044db78bb4",
+      "size": 9082,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/254931c3b4a525c26013bef8c19a28044db78bb4"
+    },
+    {
+      "path": "new/board_files/nexys4_ddr/C.1/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55f9b06870043bae946ad93c6ad15b31bca7ebb2",
+      "size": 11152,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/55f9b06870043bae946ad93c6ad15b31bca7ebb2"
+    },
+    {
+      "path": "new/board_files/nexys4_ddr/C.1/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7128ccee0b994efd117859ea3680ddab31d07ba1",
+      "size": 17820,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/7128ccee0b994efd117859ea3680ddab31d07ba1"
+    },
+    {
+      "path": "new/board_files/nexys_video",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "528661555d62b5787290b11216701d9a1f4dd0a1",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/528661555d62b5787290b11216701d9a1f4dd0a1"
+    },
+    {
+      "path": "new/board_files/nexys_video/A.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "94b9630d5fd31b2fe0ac7faa16d57a7798b17ab0",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/94b9630d5fd31b2fe0ac7faa16d57a7798b17ab0"
+    },
+    {
+      "path": "new/board_files/nexys_video/A.0/1.1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6340ec5a965010399a536c53aef6d305d87a9bfe",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/6340ec5a965010399a536c53aef6d305d87a9bfe"
+    },
+    {
+      "path": "new/board_files/nexys_video/A.0/1.1/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85ad708ccea5b2dcf3bda8e8b0d3008174ef2de6",
+      "size": 57440,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/85ad708ccea5b2dcf3bda8e8b0d3008174ef2de6"
+    },
+    {
+      "path": "new/board_files/nexys_video/A.0/1.1/mig.prj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d73937fb0d86ed5ae190f28aabfb1519f315bc2b",
+      "size": 9619,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/d73937fb0d86ed5ae190f28aabfb1519f315bc2b"
+    },
+    {
+      "path": "new/board_files/nexys_video/A.0/1.1/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bcd4d0482dd203cd13cf333eee698819f1fd2b71",
+      "size": 9141,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/bcd4d0482dd203cd13cf333eee698819f1fd2b71"
+    },
+    {
+      "path": "new/board_files/nexys_video/A.0/1.1/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d64584ea75593c822ddd82ac042d001ca25c664",
+      "size": 15700,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/2d64584ea75593c822ddd82ac042d001ca25c664"
+    },
+    {
+      "path": "new/board_files/nexys_video/A.0/1.2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3c0aae5a6bbc9e2270c6a263a83048c74005c6ec",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/3c0aae5a6bbc9e2270c6a263a83048c74005c6ec"
+    },
+    {
+      "path": "new/board_files/nexys_video/A.0/1.2/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f1a94ee369502686fdb77d824ba28e5a3b2edb0",
+      "size": 57412,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/5f1a94ee369502686fdb77d824ba28e5a3b2edb0"
+    },
+    {
+      "path": "new/board_files/nexys_video/A.0/1.2/mig.prj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40e336d7fb71eb211239a3a0caa4f3efae1058c6",
+      "size": 9151,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/40e336d7fb71eb211239a3a0caa4f3efae1058c6"
+    },
+    {
+      "path": "new/board_files/nexys_video/A.0/1.2/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bcd4d0482dd203cd13cf333eee698819f1fd2b71",
+      "size": 9141,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/bcd4d0482dd203cd13cf333eee698819f1fd2b71"
+    },
+    {
+      "path": "new/board_files/nexys_video/A.0/1.2/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d64584ea75593c822ddd82ac042d001ca25c664",
+      "size": 15700,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/2d64584ea75593c822ddd82ac042d001ca25c664"
+    },
+    {
+      "path": "new/board_files/sword",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bf0442ae8b2a62b43a1a918a8d1b9d8b8d1f0269",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/bf0442ae8b2a62b43a1a918a8d1b9d8b8d1f0269"
+    },
+    {
+      "path": "new/board_files/sword/C.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "287c5eb2ee5f4ee778194f95568820a81b8b232d",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/287c5eb2ee5f4ee778194f95568820a81b8b232d"
+    },
+    {
+      "path": "new/board_files/sword/C.0/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7164f2b804ff53dcfe748b268c1755ac274fd87",
+      "size": 45205,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/b7164f2b804ff53dcfe748b268c1755ac274fd87"
+    },
+    {
+      "path": "new/board_files/sword/C.0/mig.prj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cde7e6ff3ce0cad46b531fff0b5a3dac624fbb49",
+      "size": 12857,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/cde7e6ff3ce0cad46b531fff0b5a3dac624fbb49"
+    },
+    {
+      "path": "new/board_files/sword/C.0/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a95106a103f28cc09ad43a54c68ff4e1cc978559",
+      "size": 9848,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/a95106a103f28cc09ad43a54c68ff4e1cc978559"
+    },
+    {
+      "path": "new/board_files/sword/C.0/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e4d8c4035f9cbd6a66a04746af4b89a923aa24d",
+      "size": 18592,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/5e4d8c4035f9cbd6a66a04746af4b89a923aa24d"
+    },
+    {
+      "path": "new/board_files/usb104-a7",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "580e9f66253f5748e39766a8989a2a1308ea1db7",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/580e9f66253f5748e39766a8989a2a1308ea1db7"
+    },
+    {
+      "path": "new/board_files/usb104-a7/B",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5a93ab38a4fbfee115078282acbafc722c707c8a",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/5a93ab38a4fbfee115078282acbafc722c707c8a"
+    },
+    {
+      "path": "new/board_files/usb104-a7/B/1.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1cbb48477a2826f30fe885a01a8ef4de1967df71",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/1cbb48477a2826f30fe885a01a8ef4de1967df71"
+    },
+    {
+      "path": "new/board_files/usb104-a7/B/1.0/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "242e3f349e6cddcedcb0c51fb724dc8ec8f7ed93",
+      "size": 28636,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/242e3f349e6cddcedcb0c51fb724dc8ec8f7ed93"
+    },
+    {
+      "path": "new/board_files/usb104-a7/B/1.0/mig.prj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7f95bfb0bff6fc3fc5cbdde0a6e77b53aeba9ef",
+      "size": 8839,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/c7f95bfb0bff6fc3fc5cbdde0a6e77b53aeba9ef"
+    },
+    {
+      "path": "new/board_files/usb104-a7/B/1.0/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f179a9a323163b75fcc33139d89ca16634dae95",
+      "size": 3873,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/7f179a9a323163b75fcc33139d89ca16634dae95"
+    },
+    {
+      "path": "new/board_files/usb104-a7/B/1.0/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2760658cefbceccfe4d4dbaace09ea6b2378117a",
+      "size": 9433,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/2760658cefbceccfe4d4dbaace09ea6b2378117a"
+    },
+    {
+      "path": "new/board_files/usb104-a7/B/1.1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ed59812a964494fa6dd40f75a921103d998b4d48",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/ed59812a964494fa6dd40f75a921103d998b4d48"
+    },
+    {
+      "path": "new/board_files/usb104-a7/B/1.1/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56adf0280d9ccd43af2c3b8a06db9c7f0c898b55",
+      "size": 28515,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/56adf0280d9ccd43af2c3b8a06db9c7f0c898b55"
+    },
+    {
+      "path": "new/board_files/usb104-a7/B/1.1/mig.prj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "717a577e59930ccaf779beeea4496fe9a477ce97",
+      "size": 8743,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/717a577e59930ccaf779beeea4496fe9a477ce97"
+    },
+    {
+      "path": "new/board_files/usb104-a7/B/1.1/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f179a9a323163b75fcc33139d89ca16634dae95",
+      "size": 3873,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/7f179a9a323163b75fcc33139d89ca16634dae95"
+    },
+    {
+      "path": "new/board_files/usb104-a7/B/1.1/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2760658cefbceccfe4d4dbaace09ea6b2378117a",
+      "size": 9433,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/2760658cefbceccfe4d4dbaace09ea6b2378117a"
+    },
+    {
+      "path": "new/board_files/usb104-a7/B/1.2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8afa8623446844a6650218aeb95e7f27014419e5",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/8afa8623446844a6650218aeb95e7f27014419e5"
+    },
+    {
+      "path": "new/board_files/usb104-a7/B/1.2/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8fca1da6cf381e9f511c46a8c25400c388ec509f",
+      "size": 28515,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/8fca1da6cf381e9f511c46a8c25400c388ec509f"
+    },
+    {
+      "path": "new/board_files/usb104-a7/B/1.2/mig.prj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7f95bfb0bff6fc3fc5cbdde0a6e77b53aeba9ef",
+      "size": 8839,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/c7f95bfb0bff6fc3fc5cbdde0a6e77b53aeba9ef"
+    },
+    {
+      "path": "new/board_files/usb104-a7/B/1.2/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f179a9a323163b75fcc33139d89ca16634dae95",
+      "size": 3873,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/7f179a9a323163b75fcc33139d89ca16634dae95"
+    },
+    {
+      "path": "new/board_files/usb104-a7/B/1.2/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2760658cefbceccfe4d4dbaace09ea6b2378117a",
+      "size": 9433,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/2760658cefbceccfe4d4dbaace09ea6b2378117a"
+    },
+    {
+      "path": "new/board_files/usb104-a7/B/1.3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6a16414a4baeb76307f71d2d6c886287c52aae9f",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/6a16414a4baeb76307f71d2d6c886287c52aae9f"
+    },
+    {
+      "path": "new/board_files/usb104-a7/B/1.3/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ab0e8e70a3e30d391e0cb859a4dce65c40b9a1a",
+      "size": 30403,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/1ab0e8e70a3e30d391e0cb859a4dce65c40b9a1a"
+    },
+    {
+      "path": "new/board_files/usb104-a7/B/1.3/mig.prj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7f95bfb0bff6fc3fc5cbdde0a6e77b53aeba9ef",
+      "size": 8839,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/c7f95bfb0bff6fc3fc5cbdde0a6e77b53aeba9ef"
+    },
+    {
+      "path": "new/board_files/usb104-a7/B/1.3/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e463c8772c463ba0988dada836604c99ce2a5196",
+      "size": 3873,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/e463c8772c463ba0988dada836604c99ce2a5196"
+    },
+    {
+      "path": "new/board_files/usb104-a7/B/1.3/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbd09e5726ef83aede3ae7a8a316f282158caf38",
+      "size": 12339,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/dbd09e5726ef83aede3ae7a8a316f282158caf38"
+    },
+    {
+      "path": "new/board_files/zedboard",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "70f7ce5e7088b01d5a5aff5d04cf29225ba65607",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/70f7ce5e7088b01d5a5aff5d04cf29225ba65607"
+    },
+    {
+      "path": "new/board_files/zedboard/1.3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9382b57710a5d70491921dcd23288c1d1b0e1ae6",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/9382b57710a5d70491921dcd23288c1d1b0e1ae6"
+    },
+    {
+      "path": "new/board_files/zedboard/1.3/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "993af4d36d9581442b2789c2993127b67b41d6d5",
+      "size": 33891,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/993af4d36d9581442b2789c2993127b67b41d6d5"
+    },
+    {
+      "path": "new/board_files/zedboard/1.3/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cde0a8c5791b1fefcc698ebef8cd5725ed5e498",
+      "size": 5498,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/6cde0a8c5791b1fefcc698ebef8cd5725ed5e498"
+    },
+    {
+      "path": "new/board_files/zedboard/1.3/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3b38777d1c2d8786c4c94cc0e192489a4c77525",
+      "size": 18639,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/e3b38777d1c2d8786c4c94cc0e192489a4c77525"
+    },
+    {
+      "path": "new/board_files/zedboard/1.3/zed_board.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56dc99fb484c2b9be53ce3136c586e3c8d5479e5",
+      "size": 69596,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/56dc99fb484c2b9be53ce3136c586e3c8d5479e5"
+    },
+    {
+      "path": "new/board_files/zybo-z7-10",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "10b9c26f20a41a6ff0a2a48a21c6b545b64b3602",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/10b9c26f20a41a6ff0a2a48a21c6b545b64b3602"
+    },
+    {
+      "path": "new/board_files/zybo-z7-10/A.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e503062eb206965021d122071d76a9ecbef1d78f",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/e503062eb206965021d122071d76a9ecbef1d78f"
+    },
+    {
+      "path": "new/board_files/zybo-z7-10/A.0/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e9c8835f9e40148c752a9af85e459e4456f75db",
+      "size": 36035,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/5e9c8835f9e40148c752a9af85e459e4456f75db"
+    },
+    {
+      "path": "new/board_files/zybo-z7-10/A.0/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09c94bc49c47d4e538493b3fb61394febed91eb6",
+      "size": 6038,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/09c94bc49c47d4e538493b3fb61394febed91eb6"
+    },
+    {
+      "path": "new/board_files/zybo-z7-10/A.0/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87f3c9298df072d7d37f3ca474013375f0059603",
+      "size": 44340,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/87f3c9298df072d7d37f3ca474013375f0059603"
+    },
+    {
+      "path": "new/board_files/zybo-z7-20",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1054879810246c9568e1e959ec89bb743ca77a58",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/1054879810246c9568e1e959ec89bb743ca77a58"
+    },
+    {
+      "path": "new/board_files/zybo-z7-20/A.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5a33a8f28cb617a5b0db5426c4c9eea0b119b3f8",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/5a33a8f28cb617a5b0db5426c4c9eea0b119b3f8"
+    },
+    {
+      "path": "new/board_files/zybo-z7-20/A.0/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "341f36c92c49af30af37e9c4748e94e15e367f77",
+      "size": 40818,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/341f36c92c49af30af37e9c4748e94e15e367f77"
+    },
+    {
+      "path": "new/board_files/zybo-z7-20/A.0/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd67e8ebbe96d761c3912ef009e48370fa096c47",
+      "size": 6788,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/cd67e8ebbe96d761c3912ef009e48370fa096c47"
+    },
+    {
+      "path": "new/board_files/zybo-z7-20/A.0/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af4269beab68e60b7b8fc8e6c2aefd557543618b",
+      "size": 44338,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/af4269beab68e60b7b8fc8e6c2aefd557543618b"
+    },
+    {
+      "path": "new/board_files/zybo",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b42076549b02c104d6f053535cd9c07b6294035d",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/b42076549b02c104d6f053535cd9c07b6294035d"
+    },
+    {
+      "path": "new/board_files/zybo/B.3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "11482d5e9ad21b4dc1e61b454ac7f5515c24da4e",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/11482d5e9ad21b4dc1e61b454ac7f5515c24da4e"
+    },
+    {
+      "path": "new/board_files/zybo/B.3/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28a6475a29d9d71fb74a581a90f0236a4cc35c98",
+      "size": 39344,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/28a6475a29d9d71fb74a581a90f0236a4cc35c98"
+    },
+    {
+      "path": "new/board_files/zybo/B.3/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "770719293801dcaa9a1863e9060faf178aef4f21",
+      "size": 5636,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/770719293801dcaa9a1863e9060faf178aef4f21"
+    },
+    {
+      "path": "new/board_files/zybo/B.3/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60da029388137e448753ff6426e8bb3f04a25957",
+      "size": 23808,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/60da029388137e448753ff6426e8bb3f04a25957"
+    },
+    {
+      "path": "new/board_files/zybo/B.4",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c12510f02da6ccf9a808757ef34ee4b12627bb15",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/c12510f02da6ccf9a808757ef34ee4b12627bb15"
+    },
+    {
+      "path": "new/board_files/zybo/B.4/board.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3b97410147ad522a12c4b529fdad23cae44593c",
+      "size": 39344,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/b3b97410147ad522a12c4b529fdad23cae44593c"
+    },
+    {
+      "path": "new/board_files/zybo/B.4/part0_pins.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "770719293801dcaa9a1863e9060faf178aef4f21",
+      "size": 5636,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/770719293801dcaa9a1863e9060faf178aef4f21"
+    },
+    {
+      "path": "new/board_files/zybo/B.4/preset.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "443049d40657cc38aefcaaba5605504feb501c8d",
+      "size": 54322,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/443049d40657cc38aefcaaba5605504feb501c8d"
+    },
+    {
+      "path": "old",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3535456198b202bfef87da955da6af0ec34e602b",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/3535456198b202bfef87da955da6af0ec34e602b"
+    },
+    {
+      "path": "old/board_parts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9e78c3014c18d8e1cdea1d66e63e0fde4983fecd",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/9e78c3014c18d8e1cdea1d66e63e0fde4983fecd"
+    },
+    {
+      "path": "old/board_parts/artix7",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cc37d9ce4804cc76915edfa9ba409fcfdd9b57e9",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/cc37d9ce4804cc76915edfa9ba409fcfdd9b57e9"
+    },
+    {
+      "path": "old/board_parts/artix7/arty",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "71e1e6c72b5be7d244342f43cd1457bf1771a5a9",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/71e1e6c72b5be7d244342f43cd1457bf1771a5a9"
+    },
+    {
+      "path": "old/board_parts/artix7/arty/C.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "458dc028c6a3d727f2634d95b69b81885d980c2d",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/458dc028c6a3d727f2634d95b69b81885d980c2d"
+    },
+    {
+      "path": "old/board_parts/artix7/arty/C.0/board_part.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7e39d2db9e3ab22d813ab91b850a916062b0271",
+      "size": 23417,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/d7e39d2db9e3ab22d813ab91b850a916062b0271"
+    },
+    {
+      "path": "old/board_parts/artix7/arty/C.0/mig.prj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b31d7bc88fb08976d2f9c7e77706af48ac6177e",
+      "size": 9700,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/9b31d7bc88fb08976d2f9c7e77706af48ac6177e"
+    },
+    {
+      "path": "old/board_parts/artix7/arty/desktop.ini",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d957fd188dbc10a2a74cd31f9982e1cfcc0c4a28",
+      "size": 42,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/d957fd188dbc10a2a74cd31f9982e1cfcc0c4a28"
+    },
+    {
+      "path": "old/board_parts/artix7/basys3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "062325bd121bb29d698e821e201127a9eb1eff07",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/062325bd121bb29d698e821e201127a9eb1eff07"
+    },
+    {
+      "path": "old/board_parts/artix7/basys3/1.1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "219952f030e6f9545e2f80c6d89b73412589f017",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/219952f030e6f9545e2f80c6d89b73412589f017"
+    },
+    {
+      "path": "old/board_parts/artix7/basys3/1.1/board_part.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd473b46372de59a04241c2416ce41156e1f7619",
+      "size": 9397,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/cd473b46372de59a04241c2416ce41156e1f7619"
+    },
+    {
+      "path": "old/board_parts/artix7/nexys4",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "58980c96d713003cfa9d5837f2df2b01d27ee04c",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/58980c96d713003cfa9d5837f2df2b01d27ee04c"
+    },
+    {
+      "path": "old/board_parts/artix7/nexys4/1.1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c7a33d2417adb3c1ec31590a04f4b4c147e09009",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/c7a33d2417adb3c1ec31590a04f4b4c147e09009"
+    },
+    {
+      "path": "old/board_parts/artix7/nexys4/1.1/board_part.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "639fec2b03106ec65ebabb5253c4b34a21c2b1da",
+      "size": 21973,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/639fec2b03106ec65ebabb5253c4b34a21c2b1da"
+    },
+    {
+      "path": "old/board_parts/artix7/nexys4_ddr",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "03823f5b06c1fd3f18c9ed9da0a69d3327234771",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/03823f5b06c1fd3f18c9ed9da0a69d3327234771"
+    },
+    {
+      "path": "old/board_parts/artix7/nexys4_ddr/1.1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7e344672e92acfa26ea397361b6377982ed9609c",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/7e344672e92acfa26ea397361b6377982ed9609c"
+    },
+    {
+      "path": "old/board_parts/artix7/nexys4_ddr/1.1/board_part.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "698b5bdfb80c74305b703ed52489cbb01c62b33b",
+      "size": 16474,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/698b5bdfb80c74305b703ed52489cbb01c62b33b"
+    },
+    {
+      "path": "old/board_parts/artix7/nexys4_ddr/1.1/mig.prj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bba8d6495083d097d5ee8ec3ad67ec2fdeab72e",
+      "size": 9054,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/0bba8d6495083d097d5ee8ec3ad67ec2fdeab72e"
+    },
+    {
+      "path": "old/board_parts/kintex7",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "81d0efbaf76ee5d4b3fffde763ed854f4c0a93be",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/81d0efbaf76ee5d4b3fffde763ed854f4c0a93be"
+    },
+    {
+      "path": "old/board_parts/kintex7/genesys2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bf214a6bfb2e5511bd06aca8e44acbf08b58668c",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/bf214a6bfb2e5511bd06aca8e44acbf08b58668c"
+    },
+    {
+      "path": "old/board_parts/kintex7/genesys2/H",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8dba8c11fb3ed425137d82dedca9a9b7fdd12145",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/8dba8c11fb3ed425137d82dedca9a9b7fdd12145"
+    },
+    {
+      "path": "old/board_parts/kintex7/genesys2/H/board_part.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79f38d2bd8b2b30ffcd21d773ffad41e840b4970",
+      "size": 22634,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/79f38d2bd8b2b30ffcd21d773ffad41e840b4970"
+    },
+    {
+      "path": "old/board_parts/kintex7/genesys2/H/mig.prj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4aab5bcbbd07ca55ce6a79346e48dc23983a3abd",
+      "size": 12948,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/4aab5bcbbd07ca55ce6a79346e48dc23983a3abd"
+    },
+    {
+      "path": "old/board_parts/zynq",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0682d2cad9c612cbf680cc76fc1d5e75a1165f66",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/0682d2cad9c612cbf680cc76fc1d5e75a1165f66"
+    },
+    {
+      "path": "old/board_parts/zynq/zybo",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4d0bf0fe7544142349204e83a509b1c0307aaab4",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/4d0bf0fe7544142349204e83a509b1c0307aaab4"
+    },
+    {
+      "path": "old/board_parts/zynq/zybo/1.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "35a5ffc144013d97ab71b57079e48b999c3db60d",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/35a5ffc144013d97ab71b57079e48b999c3db60d"
+    },
+    {
+      "path": "old/board_parts/zynq/zybo/1.0/board_part.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1419a2db1f4f33878b1c8ee75ec14675aa2ca67d",
+      "size": 2654,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/1419a2db1f4f33878b1c8ee75ec14675aa2ca67d"
+    },
+    {
+      "path": "old/board_parts/zynq/zybo/1.0/ps7.tcl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4527e7971246ed932c8549a5cd188d6d884346dd",
+      "size": 4757,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/4527e7971246ed932c8549a5cd188d6d884346dd"
+    },
+    {
+      "path": "utility",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8c29ab380214f87632d776f963b36b430d7ec80c",
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/trees/8c29ab380214f87632d776f963b36b430d7ec80c"
+    },
+    {
+      "path": "utility/Vivado_init.tcl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50ca892f528f6952da14269f1e870aab2bcc3672",
+      "size": 82,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/50ca892f528f6952da14269f1e870aab2bcc3672"
+    },
+    {
+      "path": "utility/init.tcl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50ca892f528f6952da14269f1e870aab2bcc3672",
+      "size": 82,
+      "url": "https://api.github.com/repos/Digilent/vivado-boards/git/blobs/50ca892f528f6952da14269f1e870aab2bcc3672"
+    }
+  ],
+  "truncated": false
+}

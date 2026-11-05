@@ -1,0 +1,13 @@
+0.7
+2020.2
+Jun 16 2026
+11:12:08
+/home/nectx/Dev/zynq_ml/logic/axi_cnn_accelerator.vhd,1793834850,vhdl,/home/nectx/Dev/zynq_ml/logic/tb_cnn_accelerator.vhd,,,axi_cnn_accelerator,,,,,,,,
+/home/nectx/Dev/zynq_ml/logic/axi_i2s_rx.vhd,1793825975,vhdl,/home/nectx/Dev/zynq_ml/logic/tb_axi_i2s_rx.vhd,,,axi_i2s_rx,,,,,,,,
+/home/nectx/Dev/zynq_ml/logic/axi_uart.vhd,1793832108,vhdl,/home/nectx/Dev/zynq_ml/logic/tb_axi_uart.vhd,,,axi_uart,,,,,,,,
+/home/nectx/Dev/zynq_ml/logic/pw_sdp_ram.vhd,1793824469,vhdl,/home/nectx/Dev/zynq_ml/logic/axi_cnn_accelerator.vhd,,,pw_sdp_ram,,,,,,,,
+/home/nectx/Dev/zynq_ml/logic/tb_axi_i2s_rx.vhd,1793826158,vhdl,,,,tb_axi_i2s_rx,,,,,,,,
+/home/nectx/Dev/zynq_ml/logic/tb_axi_uart.vhd,1792896116,vhdl,,,,tb_axi_uart,,,,,,,,
+/home/nectx/Dev/zynq_ml/logic/tb_cnn_accelerator.vhd,1793831919,vhdl,,,,tb_cnn_accelerator,,,,,,,,
+/home/nectx/Dev/zynq_ml/logic/uart_rx.vhd,1792896116,vhdl,/home/nectx/Dev/zynq_ml/logic/axi_uart.vhd,,,uart_rx,,,,,,,,
+/home/nectx/Dev/zynq_ml/logic/uart_tx.vhd,1792896116,vhdl,/home/nectx/Dev/zynq_ml/logic/axi_uart.vhd,,,uart_tx,,,,,,,,
