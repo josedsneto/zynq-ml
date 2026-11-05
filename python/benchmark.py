@@ -17,13 +17,37 @@ import re
 import time
 import numpy as np
 
+os.environ["MPLCONFIGDIR"] = "/tmp/mpl_cache"
+
 import matplotlib
 if not os.environ.get("DISPLAY"):
     matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 CLASS_NAMES = ["chainsaw", "engine", "hand_saw", "others"]
+CLASS_LABELS = ["Chainsaw", "Engine", "Hand Saw", "Others"]
 RPI3_BASELINE_MS = 1250.0
+
+
+def setup_publication_style():
+    """Configure matplotlib for publication-quality figures with LaTeX-like serif typography."""
+    plt.rcParams.update({
+        "font.family": "serif",
+        "font.serif": ["DejaVu Serif", "Times New Roman", "Computer Modern Roman", "serif"],
+        "mathtext.fontset": "cm",
+        "font.size": 10.5,
+        "axes.labelsize": 11,
+        "axes.titlesize": 12,
+        "xtick.labelsize": 10,
+        "ytick.labelsize": 10,
+        "legend.fontsize": 9.5,
+        "figure.titlesize": 13,
+        "axes.edgecolor": "#2d3748",
+        "axes.linewidth": 0.9,
+        "grid.color": "#cbd5e1",
+        "grid.linestyle": ":",
+        "grid.linewidth": 0.8,
+    })
 
 
 def capture_uart_benchmark(port="/dev/ttyUSB1", baudrate=115200, timeout=180.0):
@@ -148,32 +172,158 @@ def print_comparison_table(parsed: dict):
     print("=" * 86)
 
 
-def _draw_cm(ax, cm: np.ndarray, title: str):
+def _draw_cm(ax, cm: np.ndarray, title: str = None, add_colorbar: bool = True):
+    """Draw a minimalist, publication-grade confusion matrix with LaTeX-like serif typography."""
     row_sums = np.maximum(cm.sum(axis=1, keepdims=True), 1)
     cm_norm = cm.astype(np.float64) / row_sums
 
-    im = ax.imshow(cm_norm, interpolation="nearest", cmap="Blues", vmin=0.0, vmax=1.0)
-    ax.set_title(title, fontsize=11, fontweight="bold", pad=10)
-    ticks = np.arange(len(CLASS_NAMES))
+    cmap = plt.cm.Blues
+    im = ax.imshow(cm_norm, interpolation="nearest", cmap=cmap, vmin=0.0, vmax=1.0)
+
+    if title:
+        ax.set_title(title, fontsize=11, fontweight="bold", pad=8)
+
+    ticks = np.arange(len(CLASS_LABELS))
     ax.set_xticks(ticks)
     ax.set_yticks(ticks)
-    ax.set_xticklabels(CLASS_NAMES, rotation=25, ha="right", fontsize=9)
-    ax.set_yticklabels(CLASS_NAMES, fontsize=9)
+    ax.set_xticklabels(CLASS_LABELS, rotation=20, ha="right", fontsize=9.5)
+    ax.set_yticklabels(CLASS_LABELS, fontsize=9.5)
     ax.set_ylabel("True Class", fontsize=10)
     ax.set_xlabel("Predicted Class", fontsize=10)
 
-    for i in range(4):
-        for j in range(4):
+    # Clean white grid lines separating matrix cells
+    ax.set_xticks(np.arange(len(CLASS_LABELS) + 1) - 0.5, minor=True)
+    ax.set_yticks(np.arange(len(CLASS_LABELS) + 1) - 0.5, minor=True)
+    ax.grid(which="minor", color="white", linestyle="-", linewidth=1.5)
+    ax.tick_params(which="minor", bottom=False, left=False)
+
+    for i in range(len(CLASS_LABELS)):
+        for j in range(len(CLASS_LABELS)):
             val = cm_norm[i, j]
             cnt = cm[i, j]
-            txt_color = "white" if val > 0.52 else "#1a1a1a"
-            ax.text(j, i, f"{val:.2f}\n({cnt})",
-                    ha="center", va="center", color=txt_color, fontsize=8.5, fontweight="bold")
+            txt_color = "white" if val > 0.52 else "#0f172a"
+            txt = f"{val * 100.0:.1f}%\n" + r"$\mathrm{(" + f"{cnt}" + r")}$"
+            ax.text(j, i, txt, ha="center", va="center", color=txt_color,
+                    fontsize=8.5, fontweight="bold", linespacing=1.1)
+
+    if add_colorbar:
+        cbar = plt.colorbar(im, ax=ax, fraction=0.046, pad=0.03)
+        cbar.ax.tick_params(labelsize=8)
+        cbar.set_label("Normalized Recall", fontsize=8.5)
     return im
+
+
+def plot_single_cm(cm: np.ndarray, title: str, output_path: str):
+    """Save an individual standalone confusion matrix figure (minimalist paper style)."""
+    setup_publication_style()
+    fig, ax = plt.subplots(figsize=(4.8, 4.2), dpi=300)
+    _draw_cm(ax, cm, title, add_colorbar=True)
+    plt.tight_layout()
+    plt.savefig(output_path, dpi=300, bbox_inches="tight")
+    base, _ = os.path.splitext(output_path)
+    plt.savefig(f"{base}.pdf", bbox_inches="tight")
+    plt.close(fig)
+    print(f"[+] Saved standalone confusion matrix -> {output_path} & {base}.pdf")
+
+
+def plot_single_f1(ne_m: dict, i8_m: dict, output_path: str):
+    """Save an individual standalone F1-score comparison bar chart (minimalist paper style)."""
+    setup_publication_style()
+    fig, ax = plt.subplots(figsize=(6.2, 3.8), dpi=300)
+
+    labels = CLASS_LABELS + ["Macro Avg"]
+    ne_f1 = [ne_m["metrics"][c]["f1"] for c in CLASS_NAMES] + [ne_m["summary"]["macro_f1"]]
+    i8_f1 = [i8_m["metrics"][c]["f1"] for c in CLASS_NAMES] + [i8_m["summary"]["macro_f1"]]
+    paper_f1 = [96.0, 96.0, 96.0, 93.0, 95.25]  # ARARA Paper baseline (RPi 3)
+
+    x = np.arange(len(labels))
+    w = 0.25
+
+    b1 = ax.bar(x - w, paper_f1, w, label="Paper Baseline (RPi 3)",
+                color="#64748b", edgecolor="#334155", linewidth=0.6, alpha=0.9)
+    b2 = ax.bar(x, ne_f1, w, label="PS NEON (FP32)",
+                color="#2563eb", edgecolor="#1d4ed8", linewidth=0.6)
+    b3 = ax.bar(x + w, i8_f1, w, label="PL 64-MAC (INT8)",
+                color="#16a34a", edgecolor="#15803d", linewidth=0.6)
+
+    ax.set_ylim(80.0, 103.0)
+    ax.set_ylabel(r"$F_1\text{-Score (\%)} $", fontsize=10.5)
+    ax.set_title(r"$F_1\text{-Score Comparison}$", fontsize=11, fontweight="bold", pad=8)
+    ax.set_xticks(x)
+    ax.set_xticklabels(labels, fontsize=9.5)
+    ax.grid(axis="y", linestyle=":", alpha=0.5)
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.legend(loc="lower right", frameon=True, framealpha=0.9, edgecolor="#e2e8f0", fontsize=8.5)
+
+    for bars in (b1, b2, b3):
+        for bar in bars:
+            h = bar.get_height()
+            ax.text(bar.get_x() + bar.get_width() / 2.0, h + 0.4, f"{h:.1f}",
+                    ha="center", va="bottom", fontsize=7.5, family="serif")
+
+    plt.tight_layout()
+    plt.savefig(output_path, dpi=300, bbox_inches="tight")
+    base, _ = os.path.splitext(output_path)
+    plt.savefig(f"{base}.pdf", bbox_inches="tight")
+    plt.close(fig)
+    print(f"[+] Saved standalone F1-score comparison -> {output_path} & {base}.pdf")
+
+
+def plot_single_latency(ne_m: dict, i8_m: dict, output_path: str, hw_latency_override: dict = None):
+    """Save an individual standalone latency & speedup comparison bar chart (minimalist paper style)."""
+    setup_publication_style()
+    fig, ax = plt.subplots(figsize=(5.4, 3.8), dpi=300)
+
+    ne_e2e = ne_m["summary"]["e2e_ms"]
+    i8_e2e = i8_m["summary"]["e2e_ms"]
+    if hw_latency_override:
+        ne_e2e = hw_latency_override["neon_e2e_ms"]
+        i8_e2e = hw_latency_override["int8_e2e_ms"]
+
+    platforms = [
+        "RPi 3 Baseline",
+        "PS NEON (FP32)",
+        "PL 64-MAC (INT8)",
+    ]
+    latencies = [RPI3_BASELINE_MS, ne_e2e, i8_e2e]
+    colors = ["#dc2626", "#2563eb", "#16a34a"]
+    edgecolors = ["#991b1b", "#1d4ed8", "#15803d"]
+
+    bars = ax.bar(platforms, latencies, color=colors, edgecolor=edgecolors, width=0.45, linewidth=0.7)
+    ax.set_yscale("log")
+    ax.set_ylim(1.0, 4000.0)
+    ax.set_ylabel(r"Latency per Patch ($\mathrm{ms}$, log scale)", fontsize=10)
+    ax.set_title("Inference Latency & Speedup", fontsize=11, fontweight="bold", pad=8)
+    ax.grid(axis="y", which="both", linestyle=":", alpha=0.5)
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+
+    # 960 ms audio window budget guideline
+    ax.axhline(960.0, color="#d97706", linestyle="--", linewidth=1.0, alpha=0.8)
+    ax.text(0.45, 1050.0, r"$\mathrm{Real\text{-}Time\ Budget\ (960\,ms)}$",
+            color="#b45309", fontsize=8.0, ha="left", va="bottom", fontstyle="italic")
+
+    for bar, val in zip(bars, latencies):
+        sp_rpi = RPI3_BASELINE_MS / max(val, 1e-6)
+        if val >= RPI3_BASELINE_MS:
+            txt = f"{val:.0f} ms"
+        else:
+            txt = f"{val:.2f} ms\n({sp_rpi:.1f}" + r"$\times$)"
+        ax.text(bar.get_x() + bar.get_width() / 2.0, val * 1.25, txt,
+                ha="center", va="bottom", fontsize=8.0, fontweight="bold", linespacing=1.1)
+
+    plt.tight_layout()
+    plt.savefig(output_path, dpi=300, bbox_inches="tight")
+    base, _ = os.path.splitext(output_path)
+    plt.savefig(f"{base}.pdf", bbox_inches="tight")
+    plt.close(fig)
+    print(f"[+] Saved standalone latency comparison -> {output_path} & {base}.pdf")
 
 
 def plot_comparison(parsed: dict, output_fig_path: str = "comparison_results.png",
                     hw_latency_override: dict = None):
+    """Generate both the 4 split individual plots and the combined 4-panel overview with minimalist paper style."""
     modes = parsed.get("modes", {})
     if "NEON_FP32" not in modes or "PL_INT8" not in modes:
         print("[!] Missing NEON_FP32 or PL_INT8 data; skipping plot.")
@@ -182,77 +332,105 @@ def plot_comparison(parsed: dict, output_fig_path: str = "comparison_results.png
     ne_m = modes["NEON_FP32"]
     i8_m = modes["PL_INT8"]
 
-    fig, axes = plt.subplots(2, 2, figsize=(13.5, 10.5))
-    fig.suptitle(
-        "ARARA Acoustic Deforestation Detection on Zynq-7000 (Zybo Z7-10)\n"
-        "YAMNet + Refined Head: PS ARM NEON (FP32) vs. PL 64-MAC Tensor Accelerator (INT8)",
-        fontsize=13, fontweight="bold", y=0.98
-    )
+    out_dir = os.path.dirname(os.path.abspath(output_fig_path)) or "."
+    os.makedirs(out_dir, exist_ok=True)
 
-    # Panel 1 & 2: Normalized Confusion Matrices
-    _draw_cm(axes[0, 0], ne_m["cm"],
-             f"PS ARM NEON FP32 (Acc: {ne_m['summary']['acc']:.2f}%)")
-    _draw_cm(axes[0, 1], i8_m["cm"],
-             f"Zynq PL 64-MAC INT8 (Acc: {i8_m['summary']['acc']:.2f}%)")
+    # Define paths for the 4 split individual plots
+    cm_neon_path = os.path.join(out_dir, "cm_neon_fp32.png")
+    cm_int8_path = os.path.join(out_dir, "cm_pl_int8.png")
+    f1_path = os.path.join(out_dir, "f1_score_comparison.png")
+    lat_path = os.path.join(out_dir, "latency_speedup_comparison.png")
 
-    # Panel 3: Per-Class & Macro F1-Score Comparison
+    # 1. Standalone Plot 1: PS ARM NEON (FP32) Confusion Matrix (clean, no subtitle)
+    plot_single_cm(ne_m["cm"], "PS ARM NEON (FP32)", cm_neon_path)
+
+    # 2. Standalone Plot 2: Zynq PL 64-MAC (INT8) Confusion Matrix (clean, no subtitle)
+    plot_single_cm(i8_m["cm"], "PL 64-MAC (INT8)", cm_int8_path)
+
+    # 3. Standalone Plot 3: F1-Score Comparison
+    plot_single_f1(ne_m, i8_m, f1_path)
+
+    # 4. Standalone Plot 4: Latency & Speedup Comparison
+    plot_single_latency(ne_m, i8_m, lat_path, hw_latency_override)
+
+    # 5. Combined 4-Panel Overview (Minimalist Paper Styling)
+    setup_publication_style()
+    fig, axes = plt.subplots(2, 2, figsize=(10.5, 8.5), dpi=300)
+
+    # Panels 1 & 2: Confusion Matrices (no subtitles)
+    _draw_cm(axes[0, 0], ne_m["cm"], "PS ARM NEON (FP32)", add_colorbar=True)
+    _draw_cm(axes[0, 1], i8_m["cm"], "PL 64-MAC (INT8)", add_colorbar=True)
+
+    # Panel 3: F1-Scores
     ax_f1 = axes[1, 0]
-    labels_f1 = CLASS_NAMES + ["Macro Avg"]
+    labels_f1 = CLASS_LABELS + ["Macro"]
     ne_f1 = [ne_m["metrics"][c]["f1"] for c in CLASS_NAMES] + [ne_m["summary"]["macro_f1"]]
     i8_f1 = [i8_m["metrics"][c]["f1"] for c in CLASS_NAMES] + [i8_m["summary"]["macro_f1"]]
-    paper_f1 = [96.0, 96.0, 96.0, 93.0, 95.25]  # ARARA SBrT Table I reference
+    paper_f1 = [96.0, 96.0, 96.0, 93.0, 95.25]
 
     x = np.arange(len(labels_f1))
-    w = 0.26
-    b1 = ax_f1.bar(x - w, paper_f1, w, label="ARARA Paper (RPi3 FP32)", color="#7f8c8d", alpha=0.85)
-    b2 = ax_f1.bar(x,     ne_f1,    w, label="Zybo Z7-10 PS NEON (FP32)", color="#1f77b4")
-    b3 = ax_f1.bar(x + w, i8_f1,    w, label="Zybo Z7-10 PL 64-MAC (INT8)", color="#2ca02c")
+    w = 0.25
+    b1 = ax_f1.bar(x - w, paper_f1, w, label=r"Paper Baseline",
+                   color="#64748b", edgecolor="#334155", linewidth=0.6, alpha=0.9)
+    b2 = ax_f1.bar(x, ne_f1, w, label=r"PS NEON (FP32)",
+                   color="#2563eb", edgecolor="#1d4ed8", linewidth=0.6)
+    b3 = ax_f1.bar(x + w, i8_f1, w, label=r"PL 64-MAC (INT8)",
+                   color="#16a34a", edgecolor="#15803d", linewidth=0.6)
 
     ax_f1.set_ylim(80.0, 103.0)
-    ax_f1.set_ylabel("F1-Score (%)", fontsize=10)
-    ax_f1.set_title("Per-Class & Macro F1-Score (ESC-50 Fold 5)", fontsize=11, fontweight="bold")
+    ax_f1.set_ylabel(r"$F_1\text{-Score (\%)} $", fontsize=10)
+    ax_f1.set_title(r"$F_1\text{-Score Comparison}$", fontsize=11, fontweight="bold", pad=8)
     ax_f1.set_xticks(x)
-    ax_f1.set_xticklabels(labels_f1, fontsize=9.5)
-    ax_f1.grid(axis="y", linestyle="--", alpha=0.5)
-    ax_f1.legend(loc="lower right", fontsize=8.5)
+    ax_f1.set_xticklabels(labels_f1, fontsize=9.0)
+    ax_f1.grid(axis="y", linestyle=":", alpha=0.5)
+    ax_f1.spines["top"].set_visible(False)
+    ax_f1.spines["right"].set_visible(False)
+    ax_f1.legend(loc="lower right", fontsize=8.0, frameon=True, framealpha=0.9, edgecolor="#e2e8f0")
+
     for bars in (b2, b3):
         for bar in bars:
             h = bar.get_height()
             ax_f1.text(bar.get_x() + bar.get_width() / 2.0, h + 0.35, f"{h:.1f}",
-                       ha="center", va="bottom", fontsize=7.5)
+                       ha="center", va="bottom", fontsize=7.0, family="serif")
 
-    # Panel 4: End-to-End Inference Latency Comparison (ms, log scale)
+    # Panel 4: Latencies
     ax_lat = axes[1, 1]
     ne_e2e = ne_m["summary"]["e2e_ms"]
     i8_e2e = i8_m["summary"]["e2e_ms"]
-    note_suffix = ""
     if hw_latency_override:
         ne_e2e = hw_latency_override["neon_e2e_ms"]
         i8_e2e = hw_latency_override["int8_e2e_ms"]
-        note_suffix = " (Zynq Cycle-Accurate)"
 
     platforms = [
-        "Raspberry Pi 3\n(Paper Baseline)",
-        "Zybo Z7-10\nPS NEON (FP32)",
-        "Zybo Z7-10\nPL 64-MAC (INT8)",
+        "RPi 3 Baseline",
+        "PS NEON",
+        "PL 64-MAC",
     ]
     latencies = [RPI3_BASELINE_MS, ne_e2e, i8_e2e]
-    colors = ["#d62728", "#1f77b4", "#2ca02c"]
+    colors = ["#dc2626", "#2563eb", "#16a34a"]
+    edgecolors = ["#991b1b", "#1d4ed8", "#15803d"]
 
-    bars = ax_lat.bar(platforms, latencies, color=colors, width=0.52)
+    bars = ax_lat.bar(platforms, latencies, color=colors, edgecolor=edgecolors, width=0.45, linewidth=0.7)
     ax_lat.set_yscale("log")
-    ax_lat.set_ylim(1.0, 3000.0)
-    ax_lat.set_ylabel("End-to-End Latency per 0.96s Patch (ms, log scale)", fontsize=9.5)
-    ax_lat.set_title(f"Edge Latency & Hardware Speedup{note_suffix}", fontsize=11, fontweight="bold")
-    ax_lat.grid(axis="y", which="both", linestyle="--", alpha=0.5)
+    ax_lat.set_ylim(1.0, 4000.0)
+    ax_lat.set_ylabel(r"Latency per Patch ($\mathrm{ms}$, log scale)", fontsize=9.5)
+    ax_lat.set_title("Inference Latency & Speedup", fontsize=11, fontweight="bold", pad=8)
+    ax_lat.grid(axis="y", which="both", linestyle=":", alpha=0.5)
+    ax_lat.spines["top"].set_visible(False)
+    ax_lat.spines["right"].set_visible(False)
 
     for bar, val in zip(bars, latencies):
         sp_rpi = RPI3_BASELINE_MS / max(val, 1e-6)
-        lbl = f"{val:.2f} ms\n({sp_rpi:.1f}x vs RPi3)" if val < RPI3_BASELINE_MS else f"{val:.0f} ms\n(1.0x)"
-        ax_lat.text(bar.get_x() + bar.get_width() / 2.0, val * 1.18, lbl,
-                    ha="center", va="bottom", fontsize=8.5, fontweight="bold")
+        if val >= RPI3_BASELINE_MS:
+            txt = f"{val:.0f} ms"
+        else:
+            txt = f"{val:.2f} ms\n({sp_rpi:.1f}" + r"$\times$)"
+        ax_lat.text(bar.get_x() + bar.get_width() / 2.0, val * 1.25, txt,
+                    ha="center", va="bottom", fontsize=7.5, fontweight="bold", linespacing=1.1)
 
-    plt.tight_layout(rect=[0, 0, 1, 0.94])
-    plt.savefig(output_fig_path, dpi=300)
+    plt.tight_layout()
+    plt.savefig(output_fig_path, dpi=300, bbox_inches="tight")
+    base, _ = os.path.splitext(output_fig_path)
+    plt.savefig(f"{base}.pdf", bbox_inches="tight")
     plt.close(fig)
-    print(f"[+] Saved 4-panel benchmark report figure -> {output_fig_path}")
+    print(f"[+] Saved 4-panel combined overview figure -> {output_fig_path} & {base}.pdf")

@@ -97,7 +97,15 @@ Synthesized, placed, and routed in **AMD Vivado 2026.1** ([`build/fpga_utilizati
 
 Evaluated strictly on held-out **ESC-50 Fold 5** (`80 chainsaw`, `80 engine`, `80 hand_saw`, `400 others`; PTQ calibrated exclusively on Folds 1–3 and hyperparameter-selected on Fold 4):
 
-![ARARA Zynq-7000 Comparison Results](comparison_results.png)
+| Standalone Confusion Matrix: PS NEON (FP32) | Standalone Confusion Matrix: PL 64-MAC (INT8) |
+| :---: | :---: |
+| ![`cm_neon_fp32.png`](cm_neon_fp32.png) | ![`cm_pl_int8.png`](cm_pl_int8.png) |
+
+| Standalone Per-Class & Macro $F_1$-Score | Standalone Edge Latency & Hardware Speedup |
+| :---: | :---: |
+| ![`f1_score_comparison.png`](f1_score_comparison.png) | ![`latency_speedup_comparison.png`](latency_speedup_comparison.png) |
+
+*(Combined 4-panel overview: [`comparison_results.png`](comparison_results.png))*
 
 ### A. Overall Accuracy, Latency & Speedup Summary
 
@@ -196,3 +204,9 @@ xsct scripts/vitis_setup.tcl
    make host-verify
    make plot
    ```
+   Generates publication-quality 300-DPI raster (`.png`) and vector (`.pdf`) figures with serif typography (Computer Modern / DejaVu Serif) and minimalist academic paper styling (clean single titles, no subtitles, ready for LaTeX `\includegraphics`):
+   * `cm_neon_fp32.png` & `cm_neon_fp32.pdf`: PS ARM NEON (FP32) normalized 4×4 confusion matrix ($94.69\%$)
+   * `cm_pl_int8.png` & `cm_pl_int8.pdf`: PL 64-MAC (INT8) normalized 4×4 confusion matrix ($94.84\%$)
+   * `f1_score_comparison.png` & `f1_score_comparison.pdf`: Per-class & macro $F_1$-score comparison vs ARARA Raspberry Pi 3 baseline
+   * `latency_speedup_comparison.png` & `latency_speedup_comparison.pdf`: Log-scale latency per 960 ms patch ($1250\,\mathrm{ms} \to 28.1\,\mathrm{ms}$, $44.5\times$ speedup)
+   * `comparison_results.png` & `comparison_results.pdf`: 4-panel combined overview figure

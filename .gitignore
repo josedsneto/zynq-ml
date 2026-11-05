@@ -5,6 +5,15 @@
 *.hex
 *.dump
 comparison_results.png
+cm_neon_fp32.png
+cm_pl_int8.png
+f1_score_comparison.png
+latency_speedup_comparison.png
+comparison_results.pdf
+cm_neon_fp32.pdf
+cm_pl_int8.pdf
+f1_score_comparison.pdf
+latency_speedup_comparison.pdf
 
 # Generated Datasets
 data/*.txt
