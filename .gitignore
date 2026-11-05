@@ -17,6 +17,7 @@ latency_speedup_comparison.pdf
 
 # Generated Datasets
 data/*.txt
+data/*.zip
 
 # Python
 __pycache__/
